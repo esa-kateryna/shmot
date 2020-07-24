@@ -16,7 +16,7 @@ gulp.task('scss', function(){
   return gulp.src('app/scss/**/*.scss')
     .pipe(sass({outputStyle: 'compressed'}))
     .pipe(autoprefixer({
-      browsers: ['last 8 versions']
+      browsers: ['last 4 versions']
     }))
     .pipe(rename({suffix: '.min'}))
     .pipe(gulp.dest('app/css'))
@@ -39,7 +39,8 @@ gulp.task('html', function(){
 });
 
 gulp.task('script', function(){
-  return gulp.src('app/js/*.js')
+  return gulp.src(['app/js/*.js',
+                    'node_modules/slick-carousel/slick/slick.js'])
   .pipe(browserSync.reload({stream: true}))
 });
 
