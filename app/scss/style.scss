@@ -28,52 +28,50 @@ ul{
 }
 .header-top{
     background-color: #f7f7f7;
-	min-height: 71px;
+	min-height: 50px;
 }
 .header-top_content{
 	display: flex;
 	justify-content: space-between;
-	align-items: baseline;
 }
 .logo{
-    height: 71px;
+    height: 50px;
 }	
 .header-right{
     background-color: #eeeeee;
-    display: flex;
-}
-.cart{
-	margin-right: 25px;
-	span{
-		display: inline-block;
-		font-size: 11px;
-		color: #000;
-		width: 18px;
-		height: 18px;
-		text-align: center;
-		line-height: 18px;
-	}
-}
-.login-btn{
-	color: #555555;
-	font-size: 12px;
-	min-width: 72px;
-	border-radius: 3px;
-  	text-align: center;
-  	padding: 5px 15px;
-	margin-right: 7px;
+	display: flex;
 }
 .register-btn{
 	color: #555555;
-  	font-size: 12px;
+	font-size: 14px;
+	line-height: 50px;
 	min-width: 72px;
-	border-radius: 3px;
-  	text-align: center;
-	padding: 5px 15px;
+	padding-left: 25px;
+	margin-right: 25px;
+	
 }
+
+.login-btn{
+	color: #555555;
+	font-size: 14px;
+	line-height: 50px;
+	min-width: 72px;
+	
+}
+
+.cart{
+	margin-right: 25px;
+	line-height: 50px;
+	span{
+		color: #000;
+	}
+}
+
 .header-bottom{
 	background-color: #000000;
 	padding: 18px 0;
+	display: flex;
+	justify-content: space-between;
 }
 .menu{
 	li{
